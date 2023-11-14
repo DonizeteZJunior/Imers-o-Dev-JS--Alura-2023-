@@ -1,0 +1,48 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-image: url("https://c.pxhere.com/photos/9f/1b/perspective_road_freeway-543147.jpg!d");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+.container{
+    text-align: center;
+    padding: 20px;
+}
+
+#conversor{
+    margin-top: 200px;
+    display: block;
+    justify-content: center;
+}
+
+#conversor input{
+    display: block;
+    font-size: 12px;
+    padding: 12px 9px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    width: 350px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+#conversor input[type='button']{
+    width: 370px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #45b149;
+    border: 1px solid #dbdbdb;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#conversor input[type='button']:hover{
+    background-color: #7ad47d;
+}
