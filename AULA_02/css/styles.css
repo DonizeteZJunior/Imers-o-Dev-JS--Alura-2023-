@@ -27,7 +27,40 @@ body {
   .page-logo {
     width: 200px;
   }
+
+  #restart{
+    display: block;
+    justify-content: center;
+  }
+
+  #restart input{
+    display: block;
+    font-size: 12px;
+    padding: 12px 9px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    width: 350px;
+    margin: 5px auto;
+    text-align: center;
+  }
+
+  #restart input[type='button']{
+    margin-top: 100px;
+    width: 370px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #45b149;
+    border: 1px solid #dbdbdb;
+    cursor: pointer;
+    transition: 0.4s;
+  }
   
+  #restart input[type='button']:hover{
+    background-color: #7ad47d;
+  }
+
   .alura-logo {
     width: 40px;
     position: absolute;
