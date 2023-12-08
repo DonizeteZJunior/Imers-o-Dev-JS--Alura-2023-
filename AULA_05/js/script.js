@@ -1,4 +1,4 @@
-var jogadores = [
+let jogadores = [
     {
         nome:'Paulo',
         vitoria:0,
@@ -33,7 +33,6 @@ function init(){
     var tabela = document.getElementById('tabelaJogadores');
     tabela.innerHTML = '';
     for(var i = 0; jogadores.length > i; i++){
-        console.log(i)
         var jogador = jogadores[i]
         tabela.innerHTML = tabela.innerHTML + 
                         `<tr>
@@ -42,30 +41,30 @@ function init(){
                             <td>${jogador.empate}</td>
                             <td>${jogador.derrota}</td>
                             <td>${jogador.pontos}</td>
-                            <td><button onClick="adicionarVitoria(i)">Vitória</button></td>
-                            <td><button onClick="adicionarEmpate(i)">Empate</button></td>
-                            <td><button onClick="adicionarDerrota(i)">Derrota</button></td>
+                            <td><button onClick="adicionarVitoria(${i})">Vitória</button></td>
+                            <td><button onClick="adicionarEmpate(${i})">Empate</button></td>
+                            <td><button onClick="adicionarDerrota(${i})">Derrota</button></td>
                         </tr>`;
     }
 }
 
-function adicionarVitoria(indice){
-    console.log(indice);
-    var jogador = jogadores[indice];
+function adicionarVitoria(i){
+    console.log(i);
+    var jogador = jogadores[i];
     jogador.vitoria++;
     jogador.pontos = jogador.pontos + 3;
     init();
 }
 
-function adicionarEmpate(indice){
-    var jogador = jogadores[indice];
+function adicionarEmpate(i){
+    var jogador = jogadores[i];
     jogador.empate++;
     jogador.pontos = jogador.pontos + 1;
     init();
 }
 
-function adicionarDerrota(indice){
-    var jogador = jogadores[indice];
+function adicionarDerrota(i){
+    var jogador = jogadores[i];
     jogador.derrota++;
     init(); 
 }
